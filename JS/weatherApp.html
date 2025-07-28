@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+</head>
+<body>
+    <input id="city" type="text" placeholder="enter your city name" />
+    <button onclick="submit()">search</button>
+
+
+    <div id="div">
+
+    </div>
+
+</body>
+</html>
+<script>
+
+   
+let apiKey="7a1c7408fd1f2c695b08c6bc1ca36608";
+
+   async function submit(){
+     let input=document.querySelector("#city").value;
+     console.log(input)
+    let url=`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${apiKey}&units=metric`
+     let res=await fetch(url);
+    //  console.log(res)
+     
+     let data=await res.json();
+     display(data)
+     console.log(data)
+      
+
+
+   }
+
+   function display(el){
+    let parentDiv=document.createElement("div")
+    let temp=document.createElement("h3");
+    temp.innerText=  el.main.temp;                                                                                   
+    let namee=document.createElement("h2");
+    namee.innerText=el.name
+    parentDiv.append(temp,namee);
+    document.querySelector("body").append(parentDiv)
+   }
+
+   
+   
+
+</script>

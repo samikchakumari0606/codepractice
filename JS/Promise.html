@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Promise
+</body>
+</html>
+<script>
+
+// let myPromise=new Promise((resolve,reject)=>{
+
+//     if(false){
+//         resolve("welcome")
+//     }
+//     else{
+//         reject("sorry")
+//     }
+
+// })
+// console.log(myPromise)
+
+// myPromise.then(()=>{
+//     console.log("congratulations")
+// }).catch(()=>{
+//     console.log("sorry")
+// })
+
+
+//   async function getData(){
+
+//     let data=await fetch("https://fakestoreapi.com/products")
+//     console.log(data);
+//     let res=await data.json();
+//     console.log(res)
+// }
+// getData()
+
+
+fetch("https://fakestoreapi.com/products")
+.then((res)=>res.json())
+.then((data)=>console.log(data))
+.catch((err)=>console.log(err))
+
+
+
+</script>
