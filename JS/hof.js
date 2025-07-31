@@ -22,8 +22,6 @@
 // console.log(numbers)
 
 //Capitalize the first letter of every name in an array of strings:
-
-
 // const names = ['alice', 'bob', 'charlie'];
 
 // names.forEach((item)=>{
@@ -177,11 +175,9 @@
 // // Convert status: 1 → "Pending", 2 → "Shipped"
 
 // let newOrder=orders.map((item)=>{
-  
-
-    
 // })
 // console.log(newOrder)
+
 
 // const items = ['Home', 'About', 'Contact'];
 // // Output: ['<li>Home</li>', '<li>About</li>', '<li>Contact</li>']
@@ -293,6 +289,8 @@
 //     if(item.likes>100 && item.published){
 //         return item
 //     }
+
+// return item.likes>100 && item.published
 // })
 // console.log(newPosts);
 
@@ -360,3 +358,58 @@
 // })
 // console.log(newpro)
 
+
+
+
+
+//reduce
+// const numbers = [10, 20, 30];
+// // ➤ Output: 60
+// let newNumber=numbers.reduce((a,b)=>{
+//         return a+b
+// })
+// console.log(newNumber)
+
+
+// const nums = [2, 3, 4];
+// // ➤ Output: 24
+// let newNumber=nums.reduce((a,b)=>{
+//         return a*b
+// })
+// console.log(newNumber)
+
+
+// const cart = [
+//   { name: 'Shirt', price: 500 },
+//   { name: 'Shoes', price: 1200 },
+//   { name: 'Watch', price: 2000 }
+// ];
+// // ➤ Output: Total = 3700
+
+// let newCart=cart.reduce((sum,item)=>{
+//         return sum+item.price
+// },0)
+// console.log(newCart)
+
+
+
+
+// const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+// // Output: { apple: 3, banana: 2, orange: 1 }
+
+
+// const numbers = [5, 12, 7, 99, 34];
+// //  // Output: 99
+
+// let max_num=numbers.reduce((acc,item)=>{
+//      return acc>item?acc:item
+// })
+// console.log(max_num)
+
+//  const nested = [[1, 2], [3, 4], [5]];
+// // Output: [1, 2, 3, 4, 5]
+
+// let concatArr=nested.reduce((acc,item)=>{
+//         return acc.concat(item)
+// },[])
+// console.log(concatArr)

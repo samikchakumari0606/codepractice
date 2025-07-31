@@ -38,3 +38,68 @@
 // console.log(arr1.reverse())
 
 // console.log(Array.isArray(arr1))
+
+
+// let arr=[23,654,98,44,45,232]
+
+// // console.log(arr.sort())
+
+// arr.sort((a,b)=>a-b)
+// console.log("asending order",arr)
+
+// arr.sort((a,b)=>b-a)
+// console.log("desending order",arr)
+
+
+// slice()
+
+// const arr = [10, 20, 30, 40, 50, 60];
+//  // [30, 40, 50]
+//  console.log(arr.slice(2,5))
+
+// const arr = [1, 2, 3, 4, 5, 6];
+//  // [4, 5, 6]
+//  console.log(arr.slice(-3))
+
+// const arr = [5, 10, 15];
+// // [5, 10, 15]
+// console.log(arr.slice())
+
+// const arr = [100, 200, 300, 400];
+// const result = arr.slice(2); // [300, 400]
+// console.log(result)
+
+// const arr = [0, 1, 2, 3, 4, 5, 6];
+// const result = arr.slice(2, 5); // [2, 3, 4]
+// console.log(result)
+
+
+
+// splice()
+
+// remove
+// const arr = [10, 20, 30, 40];
+// console.log(arr.splice(1,2));
+
+// insert
+// const arr = [1, 2, 5, 6];
+// arr.splice(2,0,"x","y")
+// console.log(arr)
+
+//replace
+// const arr = [0, 1, 2, 3];
+// arr.splice(1,2,"a","b")
+// console.log(arr)
+
+//remove last element
+// const arr=[10,20,30];
+// arr.splice(-1,1)
+// console.log(arr)
+
+//remove all elements
+const arr = [1, 2, 3, 4];
+arr.splice(0,arr.length)
+console.log(arr)
+
+
+

@@ -166,7 +166,9 @@ const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 // const insertFruit=fruits.splice(2,0,"mango")
 // console.log(fruits)
 
-const replaceFruit=fruits.splice(1,1,"grape")
-// console.log(replaceFruit)
+// const replaceFruit=fruits.splice(1,1,"grape")
+// // console.log(replaceFruit)
 
-console.log(fruits)
+// console.log(fruits)
+
+
