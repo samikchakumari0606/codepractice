@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumeCo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(20, 20, 20);
+            color: white;
+        }
+
+        .navbar {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .nav-one {
+            font-size: 20px;
+        }
+
+        .my {
+            font-size: 35px;
+            color: rgb(100, 100, 165)
+        }
+
+        .nav-two ul {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .nav-two ul li {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .myHeader {
+            height: 450px;
+            width: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .myinput {
+            padding: 10px;
+            width: 30%;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 5px;
+        }
+
+        .header-text-one {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-top: 5px;
+        }
+
+        .header-text-two {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .btn {
+            padding: 16px;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            margin: 2px;
+            height: 60px;
+            font-size: 15px;
+        }
+
+        .btn-black {
+            background-color: black;
+            color: white;
+        }
+
+
+        .next-head {
+            height: 180px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .next-head-child {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .next-div {
+
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .next-div {
+
+            width: 100%;
+           
+        }
+
+        .fourth-div {
+            height: 600px;
+            width: 100%;
+           
+        }
+
+        .fourth-div-one {
+            height: 200px;
+            width: 100%;
+       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 20px;
+
+        }
+
+        .fourth-div-two {
+            height: 400px;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: auto;
+            margin-top:10px;
+        }
+
+        .fourth-div-two>div {
+            border: 1px solid gainsboro;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding:15px;
+        }
+
+        /* media query */
+
+        @media screen and (min-width:10px) and (max-width:500px) {}
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="nav-one"> <span class="my">10x</span> resume.co </div>
+        <div class="nav-two">
+            <ul>
+                <li>Home</li>
+                <li>Why Us?</li>
+                <li>How It Works</li>
+                <li>Scan Resume</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="myHeader">
+
+            <input class="myinput" value="Free resume analysis in seconds" />
+           <br/>
+            <p class="header-text-one"><span style="margin-left: 100px;">Get Your Resume</span> <br />Analyzed By AI In
+                Seconds</p>
+            <br />
+            <p class="header-text-two">Our AI-powered resume scanner provides instant feedback, suggests <br />
+                improvements, and helps you land more interviews.</p>
+            <br />
+            <br />
+            <div>
+                <button class="btn">Upload Resume</button>
+                <button class="btn btn-black">Learn More</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- next head -->
+    <div class="next-head">
+        <div class="next-head-child">
+            <div class="next-div">
+                <h1>5000+</h1>
+                <p>resume scanned</p>
+            </div>
+            <div class="next-div">
+                <h1>98%</h1>
+                <p>acceuracy </p>
+            </div>
+            <div class="next-div">
+                <h1>24/7</h1>
+                <p>Instant Analysis</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fourth-div -->
+    <div class="fourth-div">
+        <div class="fourth-div-one">
+            <p>Why choose us</p>
+            <br />
+            <p style="font-weight: 900;font-size:30px;">Make your resume stand out</p>
+            <br />
+            <p> AI-powered resume scanner helps you optimize your resume for Applicant Tracking Systems and recruiters.
+            </p>
+
+        </div>
+        <div class="fourth-div-two">
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+            <div>
+                <h1>ATS competibility check</h1><br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellat, facere ab culpa explicabo
+                    doloribus?</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Oops
+</body>
+</html>
+<script>
+
+//    about this
+    // console.log(this) //window object
+
+    // function aboutThis(){
+    //     console.log(this)// window object
+    // }
+    // aboutThis()
+
+    // let objThis={
+    //     myName:"samiksha",
+    //     myAge:26,
+    //     greet:function(){
+    //         console.log(`my name is ${this.myName}`)
+    //          console.log(this)//complete object
+    //     }
+       
+    // }
+    // objThis.greet() 
+
+
+//     function myConstructor(){
+//    this.name="pulkit",
+//    this.age=25
+// }
+// console.log(this)//window
+// const instructor=new myConstructor();
+// console.log(instructor)
+
+
+//class
+// class animal{
+ 
+//     constructor(name){
+//         this.name=name
+//     }
+//     speak(){
+//         console.log(`${this.name} make a sound `)
+//     }
+
+
+// }
+
+// class dog extends animal{
+//     speak(){
+//         console.log(`${this.name} barks`)
+//     }
+
+// }
+
+// const newDog=new dog("Bruno");
+// newDog.speak();
+
+
+// Inheritance
+
+// class Animal{
+
+//     constructor(name){
+//         this.name=name
+//     }
+
+//     eat(){
+//         console.log(`${this.name} eats`);
+        
+//     }
+// }
+
+
+// class dog extends Animal{
+    
+//     constructor(name,breed){
+//       super(name);
+//       this.breed=breed
+//     }
+
+//     bark(){
+//         console.log(`${this.name} barks`);
+//     }
+
+// }
+
+// const dog1= new dog("tommy", "beagle");
+// dog1.eat()
+// dog1.bark()
+// console.log(dog1)
+
+
+
+//whenever we create object prototype automatically created by javascript
+//    var city={
+//        newCity:"Chennai",
+//        flate:"1 BHK"
+//    }
+
+//    console.log(city)
+
+ 
+//object method and prototypal inheritance
+
+//      var student={
+//        name:"samiksha",
+//        age:27,
+//        company:"Microsoft",
+//        salary:"10 LPA",
+//        joiningData:function(){
+//         console.log("you can join from 1st October 2025")
+//        }
+//    }
+// //    console.log(student)
+// //    console.log(student.joiningData())
+
+//    student.__proto=city;
+
+// //    console.log(student)
+
+
+
+//constructor function
+
+// function myConstructor(){
+//    this.name="pulkit",
+//    this.age=25
+// }
+// console.log(this)//window
+// const instructor=new myConstructor();
+// console.log(instructor)
+
+// const proto = {
+//    myfunc:function(){
+//     console.log("my object method")
+//    }
+// };
+
+
+
+//METHODS TO CREATE OBJECT
+
+// [1] object litral
+
+//var city={
+//        newCity:"Chennai",
+//        flate:"1 BHK"
+//    }
+
+
+//[2] new object()
+
+// const secondMethodToCreateObj=new Object();
+// // console.log(secondMethodToCreateObj);
+// secondMethodToCreateObj.text="thank you";
+// console.log(secondMethodToCreateObj)
+
+
+//[3] constructor function
+
+//this==>with the help of this keyword in constructor function we can acces every method and properties defiend by new keyword.
+//new==>use to create empty object{}.
+
+//// function myConstructor(){
+//    this.name="pulkit",
+//    this.age=25
+// }
+// console.log(this)//window
+// const instructor=new myConstructor();
+// console.log(instructor)
+
+//[4] object create()
+
+// const newObj=Object.create(proto);
+// // console.log(newObj)//{}
+// newObj.first="welcome";
+// newObj.second="*";
+
+// console.log(newObj)
+
+//[5] using json
+
+// const jsonObj='{"name":"samiksha", "age":26}'
+// console.log(jsonObj)
+// const myobj=JSON.parse(jsonObj)
+// console.log(myobj)
+
+
+
+
+
+
+
+
+
+</script>

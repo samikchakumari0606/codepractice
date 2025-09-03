@@ -1,0 +1,58 @@
+.navbar {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white
+}
+
+.home {
+
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.myNav {
+    list-style: none;
+    display: flex;
+    border: 2px solid red
+}
+
+.myNav li {
+    padding: 10px;
+}
+
+.menu {
+    border: 2px solid blue;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+
+    .navbar {
+        background-color: lightcyan;
+        color: black
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .myNav {
+        display: none;
+
+    }
+
+    .myNav.active {
+        display: flex;
+        flex-direction: column;
+        color: red;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        right: 0
+    }
+
+}

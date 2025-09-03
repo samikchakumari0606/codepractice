@@ -1,0 +1,145 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="bg-teal-500 text-white">
+    <header class="py-3 px-5 flex justify-around text-xl font-bold ">
+        <div>
+            <a href="#">WFA</a>
+        </div>
+        <div >
+            <ul class="hidden lg:flex lg:gap-6 ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="py-5 mx-10 space-y-4 lg:flex ">
+        <div class="lg:flex-1 lg:order-2">
+            <img src="./hero.png" alt="hero image" class="mx-auto border border-white shadow-lg shadow-black lg:rounded-full ">
+        </div>
+        <div class="space-y-4 lg:flex-1 lg:order-1 lg:flex lg:justify-center lg:items-center lg:flex-col">
+
+            <h1 class="text-6xl font-bold">Let's Switch To Remote</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur repellendus ipsum quia doloremque laudantium. Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Amet error possimus eaque quas distinctio rerum sapiente tempora
+                blanditiis corrupti similique dignissimos voluptas excepturi autem, hic, quam culpa mollitia repellendus
+                maxime.</p>
+        </div>
+    </main>
+
+    <form action="" class="flex flex-col space-y-3 mt-3 text-black lg:mx-60">
+        <input type="text" placeholder="enter city" class="px-4 py-3 rounded rounded-lg">
+        <input type="text" placeholder="enter name" class="px-4 py-3 rounded rounded-lg bg-purple-900">
+    </form>
+</body>
+
+</html> -->
+
+<!-- Login form -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Form</title>
+</head>
+<body class="bg-teal-500 h-screen flex items-center justify-center">
+
+    <div class="h-[500px] w-[750px] border border-white flex items-center justify-center text-white shadow-lg shadow-black">
+        <div class="flex flex-1">
+            <img src="./hero.png" alt="login-image" class="h-full">
+        </div>
+        <div class="flex-1 space-y-4 mx-6">
+           <h1 class="text-4xl font-bold">Login</h1>
+           <p>Acess to 300+ hours of courses, tutorial and liveStrems</p>
+           <form action="" class="space-y-2 text-black">
+            <input type="text" placeholder="email address" class="px-4 py-3 w-80 rounded rounded-md">
+            <input type="text" placeholder="password" class="px-4 py-3 w-80 rounded rounded-md">
+            <input type="text" placeholder="Sign in" class="px-4 py-3 w-80 rounded rounded-md">
+           </form>
+
+           <p>Don't have an account? <span class="text-blue-600">Signup </span> </p>
+           <p>Forget password?<span class="text-blue-600">Reset password</span> </p>
+           <p>Don't have a password yet? <span class="text-blue-600">Set password</span> </p>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Navbar</title>
+</head>
+
+<body class="bg-[url(./bgImage.jpg)] bg-center bg-cover h-screen text-white">
+
+    <header class="bg-gray-800 ">
+
+        <nav class="flex items-center justify-between px-12 h-16">
+            <a href="" class="text-2xl font-bold border px-2 px-1">Telwind Anytime</a>
+
+            <div
+                class="dropdown-menu absolute -top-full  left-0 bg-gray-800 w-full flex flex-col gap-6 items-center py-2 text-lg font-bold">
+                <ul class="flex flex-col items-center gap-6">
+                    <li class="hover:text-orange-400 cursor-pointer">Home</li>
+                    <li class="hover:text-orange-400  cursor-pointer">About</li>
+                    <li class="hover:text-orange-400  cursor-pointer">Videos</li>
+                    <li class="hover:text-orange-400  cursor-pointer">Blog</li>
+                    <li class="hover:text-orange-400  cursor-pointer">Courses</li>
+                </ul>
+                <div class="flex flex-col items-center gap-6">
+                    <button class=" cursor-pointer hover:text-orange-400">Login</button>
+                    <button class="bg-orange-400 rounded-lg px-2 py-1   cursor-pointer">Signup</button>
+                </div>
+
+            </div>
+
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+        </nav>
+
+    </header>
+
+</body>
+<script>
+    let toggleBtn = document.querySelector(".toggle-button");
+    let dropdown = document.querySelector(".dropdown-menu");
+
+    console.log(toggleBtn,"hii")
+
+    toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle('top-16');
+    });
+
+</script>
+
+</html>

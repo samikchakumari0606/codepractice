@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <h1>Fresh Food</h1>
+        </div>
+        <ul id="navLinks">
+           <a href="#heroSection"> <li>Home</li></a>
+           <a href="#myMenu"><li>Menu</li></a> 
+           <a href=""><li>Trends</li></a> 
+           <a href=""> <li>Reviews</li></a>
+           <a href=""><li>Blogs</li></a> 
+        </ul>
+        <div class="menu">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- herosection -->
+     <div id="heroSection">
+        <div class="hero-left">
+            <h1 style="color:white">Discover the Best Food & Drinks in FreshMenu</h1>
+            <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore delectus ullam ipsum rerum
+                assumenda dolores nesciunt minus, rem saepe quae suscipit, ea, asperiores quasi?</p>
+            <a href="" class="btn">Explore More</a>
+
+        </div>
+        <div class="hero-right">
+            <img src="./images/hero.png" />
+        </div>
+     </div>
+
+     <!-- menusection -->
+     <section id="myMenu">
+        <h1 style="text-align: center;font-size:30px;color:white">Our Menu</h1>
+         <div class="menu-container">
+            <div class="menu-item">
+                <img class="menu-img" src="./images/food1.jpg" />
+                <br/>
+                <p>Roster Chiken Bowl</p>
+                <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food2.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food3.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food4.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food5.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food5.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food6.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+             <div class="menu-item">
+                <img class="menu-img" src="./images/food1.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img class="menu-img" src="./images/food2.jpg" />
+                 <br/>
+                <p>Roster Chiken Bowl</p>
+                 <br/>
+                <button class="menu-btn">Add To Cart</button>
+            </div>
+           
+         </div>
+     </section>
+
+     <!-- footer -->
+      <footer>
+        <div class="footer-div">
+          <div class="footer-child-div">
+            <h2 class="white-text">About Us</h2>
+            <br/>
+            <p>Lorem ipsum elit. numquam earum  voluptates laudantium?</p>
+          </div>
+          <div class="footer-child-div">
+            <h2 class="white-text">Our Food</h2>
+            <br/>
+            <p>one dfe</p>
+            <p>two df</p>
+            <p>threecd</p>
+            <p>four</p>
+          </div>
+          <div class="footer-child-div">
+            <h2 class="white-text">Offer</h2>
+            <br/>
+            <p>onecedcewd</p>
+            <p>twoce</p>
+            <p>threecedcedcesdc</p>
+            <p>fourced</p>
+          </div>
+          <div class="footer-child-div">
+            <h2 class="white-text">Contact Us</h2>
+            <br/>
+             <p>one</p>
+            <p>twocde</p>
+            <p>threecedce</p>
+            <p>fourecd</p>
+          </div>
+        </div>
+
+      </footer>
+
+</body>
+</html>
+<script>
+
+    let navLinks=document.getElementById("navLinks");
+    navLinks.style.maxHeight="0px"
+
+   function toggleMenu(){
+      if(navLinks.style.maxHeight=="0px"){
+          navLinks.style.maxHeight="200px"
+      }
+      else{
+          navLinks.style.maxHeight="0px"
+      }
+   }
+
+</script>

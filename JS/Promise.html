@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Promise
+</body>
+
+</html>
+<script>
+
+    // let myPromise=new Promise((resolve,reject)=>{
+
+    //     if(false){
+    //         resolve("welcome")
+    //     }
+    //     else{
+    //         reject("sorry")
+    //     }
+
+    // })
+    // console.log(myPromise)
+
+    // myPromise.then(()=>{
+    //     console.log("congratulations")
+    // }).catch(()=>{
+    //     console.log("sorry")
+    // })
+
+
+    // let studentMarks=prompt();
+
+    // let myStudentPromise=new Promise((resolve,reject)=>{
+
+
+    //     if(studentMarks>50){
+    //         resolve("promise resolved...")
+    //     }
+    //     else{
+    //         reject("promise get rejected")
+    //     }
+    // })
+    // console.log(myStudentPromise)
+
+    // myStudentPromise.then(()=>{
+    //     alert("congratulations")
+    // })
+
+
+    // myStudentPromise.catch((err)=>{
+    //       alert(err,"err")
+    // })
+
+
+    // ✅ 1. Fetching User Data from an API
+    // Scenario: When a user logs into a site, fetch their profile data from a server.
+
+    // let fetchUserData=(id)=>{
+
+    //     return new Promise((resolve,reject)=>{
+
+    //         setTimeout(()=>{
+    //             let userDetails={
+    //                 1:{name:"samiksha",age:26},
+    //                 2:{name:"riya",age:25}
+    //             }
+
+    //             if(userDetails[id]){
+    //                resolve(userDetails[id])
+    //             }
+    //             else{
+    //                 reject("user not found")
+    //             }
+    //         },3000)
+    //     })
+    // }
+
+    // fetchUserData(2).then(data=>console.log(data))
+    //                 .catch(err=>console.log("err",err))
+
+
+
+
+    // ✅ 2. Simulating Order Placement in an E-commerce App
+    // Scenario: When you place an order, it takes time to process.
+
+    // let myorder=[
+    //     {product:"dress",price:5000},
+    //     {product:"laptop",price:70000}
+    // ]
+
+    // let myEcomPromise=(myorder)=>{
+    //     return new Promise((resolve,reject)=>{
+
+    //         if(myorder.length>0){
+    //             resolve("thank you.. your product is on the way!!")
+    //         }
+    //         else{
+    //             reject("sorry you have to first add To cart your project!!")
+    //         }
+
+
+    //     })
+    // }
+    // console.log(myEcomPromise)
+
+    // myEcomPromise(myorder).then(()=>alert("your product is delivered"))
+    //              .catch((err)=>alert("sorry we can't place your order"))
+
+
+
+
+    // ✅ 3. Check Payment Status
+    // Scenario: After placing the order, check if payment went through.
+
+
+
+    // let checkPaymentStatus=(isPaid)=>{
+
+    //   return new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         if(isPaid){
+    //             resolve("payment is processing")
+    //         }
+    //         else{
+    //             reject("payment failed")
+    //         }
+    //     },2000)
+    //   })
+
+
+
+    // }
+
+    // // checkPaymentStatus(true)
+
+
+    // checkPaymentStatus(true).then(status=>console.log(status))
+    //                         .catch((err)=>console.log("failed"))
+
+
+
+    // handle promise by using async await
+
+    // function checkMyPayment(isPaid){
+
+    //     return new Promise((resolve,reject)=>{
+
+    //         if(isPaid){
+    //             resolve("payment is processing")
+    //         }
+    //         else{
+    //             reject("payment is failed")
+    //         }
+
+    //     })
+
+    // }
+    // console.log(checkMyPayment(true))
+
+
+    // async function handlePayment(){
+
+    //     try{
+    //         const status=await checkMyPayment(false)
+    //         console.log(status)
+    //     }
+    //     catch(err){
+    //         console.log(err)
+    //     }
+
+    // }
+    // handlePayment()
+
+
+
+
+    const checkMyPayment = (paymentDone) => {
+        return new Promise((resolve, reject) => {
+
+            if (paymentDone) {
+                resolve("payment is on my way")
+            }
+            else {
+                reject("not done payment")
+            }
+        })
+
+    }
+
+    // checkMyPayment(false).then((res)=>console.log(res))
+    //                     .catch((err)=>console.log(err,"err"))
+
+
+    function loadImage(url){
+        return new Promise((resolve,reject)=>{
+            const img=new Image();
+            // console.log(img)
+            img.src=url;
+            img.onload=()=>resolve("Image Loaded");
+            img.onerror=()=>reject("failed to load Image")
+            
+        })
+    }
+
+    loadImage("https://plus.unsplash.com/premium_photo-1755534520276-7a75d7b70915?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8").then(msg=>console.log(msg))
+                .catch(err=>console.log(err))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   async function getData(){
+
+    //     let data=await fetch("https://fakestoreapi.com/products")
+    //     console.log(data);
+    //     let res=await data.json();
+    //     console.log(res)
+    // }
+    // getData()
+
+
+    // fetch("https://fakestoreapi.com/products")
+    // .then((res)=>res.json())
+    // .then((data)=>console.log(data))
+    // .catch((err)=>console.log(err))
+
+
+
+</script>

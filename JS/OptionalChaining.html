@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Optional Chaining
+
+    ✅ What is Optional Chaining in JavaScript?
+    Optional Chaining (?.) is a safe way to access nested object properties without causing an error if any property in
+    the chain is null or undefined.
+    Instead of throwing an error, it returns undefined if the property doesn’t exist.
+
+    ✅ Basic Syntax
+    object?.property
+    object?.method()
+    object?.[expression]
+
+
+
+
+    ✅ What is Nullish Coalescing (??) in JavaScript?
+    Nullish Coalescing (??) is an operator that returns the right-hand side value if the left-hand side is null or
+    undefined, otherwise it returns the left-hand side value.
+
+    ✅ Syntax
+    value1 ?? value2
+
+
+    If value1 is null or undefined, return value2.
+
+    Otherwise, return value1.
+
+
+</body>
+
+</html>
+<script>
+    // let myExampleOptionalChaining={
+    //     myName:"samiksha",
+    //     myAge:26,
+    //     myCompany:"Flipkart",
+    //     myCompanyDeatils:{
+    //         myLocation:"Chennai",
+    //         myPackage:""
+    //     }
+    // }
+
+    // console.log(myExampleOptionalChaining.myName)
+    // console.log(myExampleOptionalChaining.myCompanyDeatils.myPackage)
+    // console.log(myExampleOptionalChaining.myCompanyDeatils.my)//undefind
+
+    // let user = {}
+
+    // //  console.log(user.age.city) //error
+    // console.log(user?.age?.city)   //undefined
+
+    // let name = null;
+    // let defaultName = "Guest";
+
+    // console.log(name ?? defaultName); // Output: "Guest"
+
+
+    // let count=0;
+    // console.log(count||26)
+    // console.log(count??26)
+
+
+
+</script>

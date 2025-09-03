@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height:50px;
+            width:100%;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            position:relative;
+            background-color: teal;
+         }
+
+         ul{
+            list-style: none;
+            display: flex;
+            gap:10px;
+            align-items: center;
+         }
+         
+         #menu{
+            display:none;
+         }
+
+         @media (max-width:500px){
+
+            #navLink{
+                position:absolute;
+                top:50px;
+                height:500px;
+                left:0;
+                right:0;
+                background-color: aquamarine;
+                overflow: hidden;
+                flex-direction: column;
+            }
+            #menu{
+                display: block;
+            }
+
+         }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Wikipedia</h1>
+        </div>
+        <ul id="navLink">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Help</li>
+        </ul>
+        <div id="menu">
+            <h1 onclick="toggleMenu()">Menu</h1>
+        </div>
+    </nav>
+</body>
+</html>
+<script>
+    let navLink=document.getElementById("navLink");
+    navLink.style.maxHeight="0px"
+
+    function toggleMenu(){
+     
+        if(navLink.style.maxHeight=="0px"){
+               navLink.style.maxHeight="300px"
+        }
+        else{
+               navLink.style.maxHeight="0px"
+        }
+
+    }
+</script>

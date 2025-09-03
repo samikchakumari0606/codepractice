@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+     #cal{
+        height:300px;
+        width:80%;
+        border:2px solid red;
+
+     }
+     #display{
+        height:10%;
+        width:90%;
+        border:2px solid blue;
+
+     }
+     #keyboard{
+        height: 80%;
+        width:80%;
+        border:2px solid brown;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+     }
+     #keyboard>div{
+        border:4px solid green;
+        font-size: 30px;
+     }
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <div id="display">display</div>
+        <div id="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>+</div>
+            <div>-</div>
+            <div>/</div>
+            <div>*</div>
+            <div>=</div>
+            <div>c</div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <script>
+
+   let mydiv=document.querySelectorAll("#keyboard>div")
+   console.log(mydiv)
+
+   for(let i=0;i<mydiv.length;i++){
+      mydiv[i].addEventListener("click",myFunc)
+   }
+
+   let bag=" "
+
+   function myFunc(e){
+       console.log(e.target.innerText)
+
+  if(e.target.innerText=="c"){
+    //clear screen
+
+    document.getElementById("display").innerText=""
+   }
+   else if(e.target.innerText=="="){
+       try{
+        bag=eval(e.target.innerText).toString()
+        document.getElementById("#display").innerText=bag
+        
+       }
+       catch(err){
+           document.getElementById("#display").innerText="error"
+       }
+   }
+   else{
+     bag==eval(e.target.innerText).toString()
+      document.getElementById("#display").innerText=bag
+   }
+   }
+
+
+ 
+  
+</script> -->
+
+<script>
+    const now=new Date();
+    console.log(now)
+</script>

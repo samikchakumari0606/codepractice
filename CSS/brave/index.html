@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Brave</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://plus.unsplash.com/premium_photo-1711015709256-1752bf422693?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHN1bmZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Makes the image cover entire screen */
+            background-position: center;
+            /* Centers the image */
+            height: 100vh;
+            /* Ensures body takes full viewport height */
+            margin: 0;
+            /* Remove default body margin */
+            position: relative;
+        }
+
+        #mainDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #firstDiv {
+            height: 100px;
+            width: 50%;
+            
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px
+        }
+
+        .firstDivContent {
+            height: 40%;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 35px;
+            font-weight: 400;
+            color: white;
+            font-size: 20px;
+        }
+
+        .firstDivContent p:first-child {
+            font-size: 30px;
+
+        }
+
+        #secondDiv {
+            height: 330px;
+            width: 320px;
+           
+            margin: 20px;
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+        }
+
+        .secondDivContent {
+            display: flex;
+
+           
+            padding: 10px;
+            margin: 10px;
+            gap: 10px;
+            font-size: 17px;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .secondDivContent-first {
+            display: flex;
+           
+            flex-direction: column;
+            padding: 10px;
+            position: absolute;
+            top: 4px;
+            right: 0px;
+            background-color: black;
+        }
+
+        .flex-text {
+            display: flex;
+            padding: 5px 0px;
+            gap: 10px
+        }
+
+        .child {
+             margin-top: -20px;
+        }
+
+        @media screen and (min-width:10px) and (max-width:600px){
+
+           
+              #mainDiv {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+
+            #firstDiv {
+            height: 100px;
+            width: 50%;
+           
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px
+        }
+         .firstDivContent {
+            height: 40%;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 35px;
+            font-weight:300;
+            color: white;
+            font-size: 15px;
+        }
+       
+        .firstDivContent p:first-child {
+            font-size: 20px;
+
+        }
+        }
+
+        #searchDiv {
+            height: 50px;
+            width: 50%;
+            border: 1px solid white;
+            position: absolute;
+            top: 80%;
+            left: 25%;
+            border-radius: 15px;
+            display: flex;
+        }
+
+        #searchDiv input {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            background-color: transparent;
+            color: white;
+        }
+
+        #searchDiv input::placeholder {
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="firstDiv">
+            <div class="firstDivContent">
+                <p style="color:orangered">11,525</p>
+                <p>Trackers & ads blocked</p>
+            </div>
+            <div class="firstDivContent">
+                <p style="color:blue">85.5MB</p>
+                <p>Bandwidth saved</p>
+            </div>
+            <div class="firstDivContent">
+                <p>10 minutes</p>
+                <p>Times saved</p>
+            </div>
+        </div>
+
+        <div id="secondDiv">
+            <div class="secondDivContent parent">
+                <i class="fa-solid fa-tower-cell"></i>
+                <p>Talk</p>
+            </div>
+            <div class="secondDivContent parent">
+                <i class="fa-solid fa-child-reaching"></i>
+                <p>Rewards</p>
+            </div>
+
+
+            <div class=" secondDivContent child">
+
+                <div class="secondDivContent-first">
+                    <div class="flex-text">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <p>Brave VPN</p>
+                    </div>
+                    <div class="flex-text">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <p>Extra privacy & security online</p>
+                    </div>
+                    <div class="flex-text">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <p>Hide your IP & change your location</p>
+                    </div>
+
+                    <div class="flex-text">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <p>Extra privacy & security online</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- searchbox -->
+
+    <div id="searchDiv">
+      
+        <input  type="text" placeholder="Search the web privatly with AI">
+    </div>
+
+</body>
+
+</html>

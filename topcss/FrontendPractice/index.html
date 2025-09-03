@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Practice</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <p class="logo">Frontend Practice</p>
+        </div>
+        <div id="navLink">
+            <ul>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div id="menu">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <header class="head">
+        <div class="head-parent">
+            <div class="head-content">
+                <p class="better">Become a better <br /> frontend developer.</p>
+                <p class="real">Take your frontend skills to the next level by websites from real companies.</p>
+                <p class="real">The perfect type of practice yhyuh jinj. Are you up for the challenge?</p>
+                <div class="myBtn">
+                    <button class="btn">View Projects</button>
+                    <button class="btn">Learn</button>
+                </div>
+
+            </div>
+            <div class="head-image">
+                <img src="https://www.frontendpractice.com/project-collage.png" />
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
+<script>
+
+    let navLink=document.getElementById("navLink");
+    navLink.style.maxHeight="0px"
+
+
+    function toggleMenu(){
+      
+        if(navLink.style.maxHeight=="0px"){
+            navLink.style.maxHeight="300px"
+        }
+        else{
+            navLink.style.maxHeight="0px"
+        }
+    }
+</script>

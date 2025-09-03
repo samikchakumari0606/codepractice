@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    callappybind
+</body>
+</html>
+<!-- <script>
+    let stud1={
+        first:"simmi",
+        lastName:"kumari"
+
+    }
+   
+    let stud2={
+        first:"samiksha",
+        lastName:"kumari"
+
+    }
+     let details=function(city,state){
+        console.log(this.first+" "+ this.lastName+" "+city+" "+ state)
+    }
+
+    details.call(stud1,"pune","Maharastra")
+    details.apply(stud2,["Indore, Madypradesh"])
+
+    let myBind=details.bind(stud1,"Chennai", "Andra Pradesh")
+    console.log(myBind)
+    myBind()
+
+  </script>-->
+
+  <script> 
+
+
+   const obj1={
+        myName:"samiksha",
+        myAge:27
+   }
+
+   function age(state,laptop){
+    console.log(`my city is chennai and my name is ${this.myName} and ${state} and  ${laptop}`)
+   }
+
+   const obj2={
+      myName:"simmi",
+      myAge:25
+   }
+
+//    age.call(obj1,)
+
+//    age.apply(obj2,["Pune", "laptop"])
+
+   let myBind=age.bind(obj1,)
+   myBind()
+   
+
+
+  </script>
+    

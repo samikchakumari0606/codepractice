@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Closures  
+</body>
+</html>
+<script>
+
+
+//    function student1(){
+//     var myName="simmi"
+//     function student2(){
+//         console.log(myName)
+//     }
+
+//     student2()
+//    }
+//    student1()
+
+
+
+// Lexical Scope – student2 has access to myName from student1 because it was defined inside it.
+
+// Closure – student2 remembers the variable, not just its value.
+
+// Live Binding – If the variable changes, the closure sees the updated value.
+  
+
+//     function student1(){
+//     var myName="simmi"
+//     function student2(){
+//         console.log(myName)
+//     }
+//     myName="samiksha"
+//     student2()
+//    }
+//    student1()
+
+
+// let arr=[10,20,30];
+// let [a,b,c,d]=arr;
+
+// console.log(a)
+
+const data = {
+  user: {
+    id: 101,
+    info: {
+      email: "user@example.com"
+    }
+  }
+};
+
+const {user:{id}}=data;
+const {user:{info:{email}}}=data
+console.log(id,email)
+
+
+
+</script>

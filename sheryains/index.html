@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sheryians coding school</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: black;
+            color: white;
+        }
+
+
+        #navbar {
+            height: 60px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #firstNav {
+            display: flex;
+        }
+
+        .logo {
+            width: 2em;
+            margin-right: 0.5rem;
+            margin-left: 30px;
+        }
+
+        #firstNav p {
+            padding: 10px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+
+            font-size: 18px;
+            margin-left: 100px;
+        }
+
+        li {
+            list-style: none;
+            padding: 8px;
+        }
+
+        .fa-solid {
+            font-size: 20px;
+        }
+
+        /* herosection */
+
+        section {
+            height: 65vh;
+            width: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sectionContent {
+            height: 80%;
+            width: 80%;
+            margin: auto;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-style: italic;
+            font-size: 65px;
+        }
+
+        #sectionContentBtn {
+            background-color: teal;
+            padding: 15px 85      px;
+            border-radius: 15px;
+            margin-right: 40px;
+            margin-top: 15px;
+        }
+
+        #totalCount {
+            height: 40vh;
+            width: 100%;
+           
+            margin: auto
+        }
+
+        #totalCountText {
+            height:80%;
+            width:80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+         #totalCountText div{
+            padding:50px;
+           
+            font-size:25px;
+            text-align: center;
+         }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div id="navbar">
+            <div id="firstNav">
+                <img class="logo" src="https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png" />
+                <p>Sheryians <br /> coding school</p>
+            </div>
+            <div>
+                <ul id="menu">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li style="color:rgb(100, 46, 46)">Cohort 2.0</li>
+                    <li>Request Callback</li>
+                    <li>Classroom</li>
+                    <li><i class="fa-solid fa-bell"></i></li>
+                    <li><i class="fa-solid fa-user-tie"></i></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- herosection -->
+
+    <article>
+        <section>
+            <div id="sectionContent">
+                <p><span style="margin-left:30px;">We only</span> 
+                    <span style="color:teal">teach </span><br />
+                    <span style="font-size: 65px;text-align: center;">what we are really</span>
+                    <br />
+                     <span style="margin-left:30px;"> really good at.</span> 
+                </p>
+                <button id="sectionContentBtn">Check Course-Make an impact</button>
+            </div>
+        </section>
+    </article>
+
+
+    <!-- totalCount -->
+    <div id="totalCount">
+        <div id="totalCountText">
+           <div>
+            <p>25k+</p>
+            <p>Student taught</p>
+           </div>
+           <div>
+            <p>20+</p>
+            <p>Insturtor</p>
+           </div>
+           <div>
+            <p>51k+</p>
+            <p>Subscribers</p>
+           </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

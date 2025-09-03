@@ -1,0 +1,293 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ #navbar {
+     height: 50px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #0a0a23;
+     color: white;
+     cursor: pointer;
+ }
+
+ .nav-first-div {
+     padding: 5px;
+     background-color: #3b3b4f;
+     color: #858591;
+     margin: 10px;
+ }
+
+ .nav-third-div ul {
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .nav-third-div li {
+     margin: 15px;
+ }
+
+ .nav-third-div p {
+     font-size: 18px;
+     border: 1px solid white;
+     padding: 5px;
+ }
+
+ .nav-hover-white:hover {
+     background-color: white;
+     color: black
+ }
+
+ .nav-hover-yellow {
+     background-color: #fecc4c;
+     color: black;
+     cursor: pointer;
+     position: relative;
+ }
+
+
+ article {
+     height: 800px;
+     width: 100vw;
+     background-color: #2a2a40;
+
+ }
+
+ #myHeader {
+     height: 90vh;
+     width: 65vw;
+     margin: auto;
+
+ }
+
+ #first-header {
+     height: 35%;
+     width: 50%;
+
+     margin: auto;
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 25px;
+     line-height: 70px;
+ }
+
+ .yellow-header {
+     border: 2px solid black;
+     background-color: #fecc4c;
+     padding: 5px;
+     cursor: pointer;
+ }
+
+ .yellow-header:hover {
+     transition: all 0.5s;
+     transform: scale(1.1);
+ }
+
+ #second-header {
+     height: 58%;
+     width: 80%;
+
+     margin: auto;
+     margin-top: 20px;
+     font-size: 20px;
+     color: white;
+
+ }
+
+ #second-header div {
+     border: 4px solid whitesmoke;
+     padding: 22px;
+     margin: 10px;
+     cursor: pointer;
+
+ }
+
+ #second-header div p {
+     font-size: 20px;
+ }
+
+ #second-header div:hover {
+     background-color: white;
+     color: #858591;
+ }
+
+ .fa-code,
+ .fa-list,
+ .fa-box-archive {
+     font-size: 30px;
+     margin-right: 10px;
+ }
+
+
+ /* media query */
+
+ @media screen and (min-width:10px) and (max-width:600px) {
+     .nav-hover-yellow {
+       color:transparent
+     }
+     .nav-hover-yellow::after{
+      content: "new text "; /* Font Awesome mobile icon + new text */
+    
+        color:red;
+        position: absolute;
+        left:0;
+        right:0
+     }
+
+     #search {
+         display: none;
+     }
+
+     .nav-third-div li {
+         margin: 10px;
+     }
+
+     .nav-third-div p {
+         font-size: 15px;
+
+         padding: 5px;
+     }
+
+
+     #first-header {
+         height: 55%;
+         width: 90%;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 18px;
+
+     }
+
+     .yellow-header {
+         border: 2px solid black;
+         background-color: #fecc4c;
+         cursor: pointer;
+     }
+
+
+     #second-header {
+         height: auto;
+         width: 100%;
+
+         margin: auto;
+         font-size: 15px;
+         color: white;
+
+     }
+
+     #second-header div {
+         border: 4px solid whitesmoke;
+         padding: 15px;
+
+         cursor: pointer;
+
+     }
+
+     #second-header div p {
+         font-size: 20px;
+     }
+
+     #second-header div {
+
+         padding: 10px;
+         margin: 10px;
+         cursor: pointer;
+
+     }
+
+
+
+ }
+
+ @media screen and (min-width:610px) and (max-width:1000px) {
+
+
+
+     #first-header {
+         height: 65%;
+         width: 90%;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 15px;
+     }
+
+     .yellow-header {
+         border: 2px solid black;
+         background-color: #fecc4c;
+         cursor: pointer;
+     }
+
+
+     #second-header {
+         height: auto;
+         width: 100%;
+
+         margin: auto;
+         font-size: 15px;
+         color: white;
+
+     }
+
+     #second-header div {
+         border: 4px solid whitesmoke;
+         padding: 15px;
+
+         cursor: pointer;
+
+     }
+
+     #second-header div p {
+         font-size: 20px;
+     }
+
+     #second-header div {
+
+         padding: 10px;
+         margin: 10px;
+         cursor: pointer;
+
+     }
+
+
+
+     .nav-first-div {
+         padding: 2px;
+         background-color: #3b3b4f;
+         color: #858591;
+         margin: 5px;
+     }
+
+     .nav-third-div ul {
+         list-style: none;
+         display: flex;
+         justify-content: space-between;
+
+     }
+
+     .nav-third-div li {
+         margin: 5px;
+     }
+
+     .nav-third-div p {
+         font-size: 12px;
+         border: 1px solid white;
+         padding: 5px;
+     }
+
+
+
+
+ }

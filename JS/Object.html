@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+</body>
+
+</html>
+<script>
+    // create an Object
+
+    // 1]object litral
+    // let myObj={
+    //     myName:"samiksha",
+    //     myAge:30
+    // }
+    // console.log(myObj)
+
+    // 2]new Object
+    // let myObj2=new Object();
+    // // console.log(myObj2)//{}
+    // myObj2.myCity="Chennai"
+    // console.log(myObj2)
+
+    //  3]Object.create
+    // let myObj3=Object.create(myObj);
+    // console.log(myObj3)
+
+    // myObj3.myCompany="Flipkart";
+    // console.log(myObj3)
+
+
+    // 4]Constrcutor function
+
+    // function myConstructor(myPackage,myLocation){
+    //     this.myPackage=myPackage
+    //     this.myLocation=myLocation
+    // }
+
+    // let myObj4=new myConstructor(10,"Calcutta")
+    // console.log(myObj4)
+
+
+
+
+    // Accessing Object
+
+    // const person = { name: "Samiksha", age: 27 };
+
+    // console.log(person.name)
+
+    // console.log(person["age"])
+
+
+    //Adding/updating/removing properties of object
+
+    // const addingObject={}
+    // addingObject.myName="samiksha";
+    // addingObject["myCompany"]="Flipkart"
+    // addingObject.myAge=26;
+    // addingObject.myUniverse="is with me"
+    // addingObject.negativePeople="not with me"
+    // console.log(addingObject)
+
+    // addingObject.myAge=27;
+    // console.log("myage is updated",addingObject)
+
+    //  delete addingObject.negativePeople
+    //  console.log("negative people removed",addingObject)
+
+    // addingObject.myName=undefined;
+    // console.log(addingObject)
+
+
+
+    //adding key in Object
+    // addingObject["mail"]="samiksha@gmail.com"
+    // console.log("adding mail",addingObject)
+
+
+    // nested object
+
+    // const user = {
+    //   name: "Samiksha",
+    //   address: {
+    //     city: "Patna",
+    //     pincode: 800001
+    //   }
+    // };
+
+    // console.log(user.address.pincode)
+    // console.log(user["address"]["city"])
+
+    // const user = { name: "Alice" };
+    // // Add age: 25
+    // user.age=25;
+    // // console.log(user)
+
+
+    // const car = { brand: "Honda", color: "red" };
+    // // Remove color
+    // delete car.color;
+    // console.log("deleting key and value",car)
+
+
+    //multiple adding
+    // const book = {};
+    // Add title: "JS Guide" and author: "John"
+    // book.title="JS Guide"
+    // book.author="John"
+    // console.log(book)
+
+    // Object.assign(book,{title:"JS Guide",author:"John"});
+
+    // console.log(book)
+
+    // console.log({...book,title:"myTitle",author:"john"})
+
+
+
+    // const obj = { a: 1, b: 2, c: 3 };
+    // // Make obj empty
+
+    // for(let key in obj){
+    //     delete obj[key]
+    // }
+
+    // console.log(obj)
+
+    // const obj = { a: 1, b: 2, c: 3 };
+    // obj={};
+
+    // console.log(obj)
+
+
+    // const employee = { id: 101, dept: "HR" };
+    // If dept exists, remove it
+
+    // for(let key in employee){
+    //     if(key="dept"){
+    //         delete employee[key]
+    //     }
+    // }
+
+    // const user = {
+    //     name: "Samiksha",
+    //     address:
+    //     { city: "Patna" }
+    // };
+    // // Add state: "Bihar" inside address
+
+    // user.address.state="Bihar";
+    // console.log("adding key in nested object",user)
+
+
+    // const profile = { user: { name: "Aman", age: 30 } };
+    // // Remove age
+
+    // delete profile["user"]["age"];
+
+    // console.log("deleting profile",profile)
+
+
+    //     const settings = { theme: "dark" };
+    // // Add language: "English" only if it doesn't exist
+
+    //    for(let key in settings){
+    //     if(!key["language"]){
+    //         settings["language"]="English"
+    //     }
+    //    }
+    //    console.log("setting",settings)
+
+
+    //     const data = { name: "John", age: null, email: undefined, city: "Delhi" };
+    // // Remove keys with null or undefined
+    //      console.log(data)
+    //     for(let key in data){
+    //         if(data[key]==null || data[key]==undefined){
+    //             delete data[key]
+    //         }
+    //     }
+    //     console.log("data",data)
+
+    //   let obj={};
+
+    //   const key="country";
+    //   const value="India";
+    //   obj[key]=value;
+
+    //   console.log(obj)
+
+
+    // const user = { name: "Riya", age: 25, city: "Delhi" };
+    // const removeKey = "age";
+    // // Remove the key stored in removeKey
+    
+    // delete user[removeKey]
+    // console.log(user)
+
+
+
+    // object methods
+
+//   ✅ 1. Built-in Object Methods
+// 🔹 Object.keys(obj)
+
+// Returns an array of all keys in the object.
+
+// const user = { name: "Riya", age: 25 };
+// console.log(Object.keys(user)); // ["name", "age"]
+
+// 🔹 Object.values(obj)
+
+// Returns an array of all values.
+
+// console.log(Object.values(user)); // ["Riya", 25]
+
+// 🔹 Object.entries(obj)
+
+// Returns an array of [key, value] pairs.
+
+// console.log(Object.entries(user));
+// // [["name", "Riya"], ["age", 25]]
+
+// 🔹 Object.assign(target, ...sources)
+
+// Copies properties from source objects to target.
+
+// const obj1 = { a: 1 };
+// const obj2 = { b: 2 };
+// Object.assign(obj1, obj2);
+// console.log(obj1); // { a: 1, b: 2 }
+
+
+
+</script>
